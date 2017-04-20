@@ -7,3 +7,9 @@
 <p> {{ nombre}} </p> 
 
 <input type="button"  (click)="mostrarNombre()" value="nombre" />
+
+<br><br>
+<a [href] ="nombre" *ngIf="mostrar" > {{ nombre }}</a>
+
+<input type="radio" (change)="mostrar=false" value="ocultar" name="radioMostrar"> Ocultar
+<input type="radio" (change)="mostrar=true" value="ocultar" name="radioMostrar"> Mostrar

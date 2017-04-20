@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hola!';
   nombre = 'Noe';
-
+  mostrar = true;
 
  mostrarNombre(){
 
     console.log(this.nombre);
   
 }
+
 }
 
