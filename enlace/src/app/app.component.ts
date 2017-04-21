@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Hola!';
   nombre = 'Noe';
   mostrar = true;
+  dato = 0;
 
  mostrarNombre(){
 

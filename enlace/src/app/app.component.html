@@ -13,3 +13,8 @@
 
 <input type="radio" (change)="mostrar=false" value="ocultar" name="radioMostrar"> Ocultar
 <input type="radio" (change)="mostrar=true" value="ocultar" name="radioMostrar"> Mostrar
+<br><br>
+<input type="button"  [(ngModel)]="dato" name="dato"  (mouseover)="dato=dato+1" />
+<p> {{ dato }} </p> 
+
+<img src="assets/fotos-panoramicas.jpg"  [ngStyle]="{'top.px': dato}" style="position : absolute; width: 80px;" />
